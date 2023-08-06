@@ -13,7 +13,7 @@ async function connectDB() {
   }
 }
 
-//connectDB();
+connectDB();
 
 app.listen(port, () => {
   console.log(`Our server is runing on ${port}`);

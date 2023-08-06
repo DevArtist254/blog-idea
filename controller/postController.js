@@ -1,14 +1,21 @@
+const Post = require('./../model/postModel');
+
 exports.getAllPost = (req, res) => {
   res.status(200).json({
     backendTest: 'hello world',
   });
 };
 
-exports.createAPost = (req, res) => {
-  const foo = req.body;
+exports.createAPost = async (req, res) => {
+  try {
+    const post = await Post.create(req.body);
 
-  console.log(foo);
-  res.status(200).json({
-    feedback: `${foo.foo}`,
-  });
+    res.status(200).json({
+      createPost: post,
+    });
+  } catch (error) {
+    res.status(404).json({
+      error: error.message,
+    });
+  }
 };
