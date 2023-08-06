@@ -1,0 +1,29 @@
+{
+  "name": "water-is-life",
+  "version": "1.0.0",
+  "description": "Blog about water",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevArtist254/blog-idea.git"
+  },
+  "keywords": [
+    "water"
+  ],
+  "author": "devartist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevArtist254/blog-idea/issues"
+  },
+  "homepage": "https://github.com/DevArtist254/blog-idea#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
