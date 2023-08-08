@@ -4,7 +4,8 @@
   "description": "Blog about water",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start:pro": "NODE_ENV=development nodemon index.js",
+    "start": "NODE_ENV=production nodemon index.js"
   },
   "repository": {
     "type": "git",
